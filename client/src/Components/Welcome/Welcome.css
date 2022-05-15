@@ -1,0 +1,54 @@
+.conteinerWelcome {
+  background-image: url("../../Img/backGround2.jpg");
+  background-size: cover  ;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 1px; 
+  margin: 0; 
+}
+.imageBlur{
+  animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both
+}
+.txtAdventure{
+  position: absolute;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 55px;
+  top: 22rem;
+  left: 25px;
+  animation:tracking-in-expand 1.5s cubic-bezier(.215,.61,.355,1.000) both;
+  transform: rotate(-90deg);
+}
+.containerTxt{
+  box-sizing: border-box;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 30rem;
+  left:18rem;
+  font-family: 'Fjalla One', sans-serif;
+  display: block;
+  width: 650px;
+}
+.tituloTxt{
+  font-size: 48px;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 155px;
+  margin-bottom: 0;
+}
+.subTxt{
+  margin-top: -10px;
+  font-size: 30px;
+}
+.containerButtonGo {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 40rem;
+  left:25rem;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}

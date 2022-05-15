@@ -1,9 +1,15 @@
-import './App.css';
+//import { Route } from 'react-router-dom';
+//import NavBar from './Components/NavBar/NavBar.js'
+import Welcome from "./Components/Welcome/Welcome.js"
 
 function App() {
+  
+  
   return (
-    <div className="App">
-      <h1>Henry Countries</h1>
+    <div>
+      {/* <NavBar /> */}
+      <Welcome />
+      
     </div>
   );
 }
