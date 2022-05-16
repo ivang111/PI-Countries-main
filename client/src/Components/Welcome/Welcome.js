@@ -1,8 +1,7 @@
 import React from 'react'
 import initialImg from "../../Img/initialImg.png"
+import { Link } from "react-router-dom"
 import "./Welcome.css"
-
-
 
 
 function Welcome() {
@@ -17,11 +16,11 @@ function Welcome() {
             <p className='tituloTxt'>Ecoturismo y Actividades</p><br/>
             <p className='subTxt'>Busca y registra nuevas acitividades ecologicas alrededor del MUNDO </p>
         </div>
-        <div className='containerButtonGo'>
-            <button >Let's GO</button>
-        </div>
-        
-       
+        <Link to="/home" id="click">
+            <div className='containerButtonGo'>
+                <button className='buttonHome'>Inicia el Recorrido</button>
+            </div>
+        </Link>
     </div>
     </>
   )

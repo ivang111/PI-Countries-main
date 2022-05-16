@@ -12,7 +12,7 @@ router.post("/activity", async (req, res) => {
           dificulty: dificulty,
           duration: duration, 
           season: season, 
-          selecCountry: selecCountry,
+          //selecCountry: selecCountry,
         }
       });
       //console.log(newActivity)

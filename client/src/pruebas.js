@@ -1,66 +1,43 @@
+// Importa las action types acá
+import { CREATE_PRODUCT, DELETE_PRODUCT, GET_ALL_PRODUCTS, GET_PRODUCT_DETAIL } from "../actions";
 
+const initialState = {
+  products: [],
+  productDetail: {},
+};
 
-.Iam .innerIam {
-  display: inline-block;
-  color: #e74c3c;
-  position: relative;
-  white-space: nowrap;
-  top: 0;
-  left: 0;
+const rootReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case GET_ALL_PRODUCTS:
+            if (state.products.length === 0) {
+                return {
+                    ...state, 
+                    products: action.payload}
+            }
+            else{
+                return{
+                    ...state,
+                }
+           }
+    case GET_PRODUCT_DETAIL:
+            return{
+                ...state,
+                productDetail: action.payload
+            }
+    case CREATE_PRODUCT:
+           return{
+               ...state,
+               products: [...state.products, action.payload]
+           }
+    case DELETE_PRODUCT:
+            return{
+                ...state,
+                products: state.products.filter(u => u.id !== action.payload)
+            }
+        default: return { ...state }
+       
 
+  }
+};
 
-/*animation*/
--webkit-animation:move 5s;
-   -moz-animation:move 5s;
-    -ms-animation:move 5s;
-     -o-animation:move 5s;
-        animation:move 5s;
-/*animation-iteration-count*/
--webkit-animation-iteration-count:infinite;
-   -moz-animation-iteration-count:infinite;
-    -ms-animation-iteration-count:infinite;
-     -o-animation-iteration-count:infinite;
-        animation-iteration-count:infinite;
-/*animation-delay*/
--webkit-animation-delay:1s;
-   -moz-animation-delay:1s;
-    -ms-animation-delay:1s;
-     -o-animation-delay:1s;
-        animation-delay:1s;
-}
-@keyframes move{
-0%  { top: 0px; }
-20% { top: -50px; }
-40% { top: -100px; }
-60% { top: -150px; }
-80% { top: -200px; }
-}
-
-@-webkit-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@-moz-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@-o-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
+export default rootReducer;
