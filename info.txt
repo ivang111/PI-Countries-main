@@ -44,7 +44,8 @@
 "maps":{"googleMaps":"https://goo.gl/maps/RdwTG8e7gPwS62oR6",
 "openStreetMaps":"https://www.openstreetmap.org/relation/120027"},
 
-"population":50882884,"gini":{"2019":51.3},//llamado
+"population":50882884,
+"gini":{"2019":51.3},//llamado
 
 "fifa":"COL",
 "car":{"signs":["CO"],"side":"right"},
