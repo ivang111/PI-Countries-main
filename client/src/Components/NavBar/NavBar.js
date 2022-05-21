@@ -9,13 +9,13 @@ function NavBar() {
     <nav className='containerNav'>
       <NavLink to='/home'>
         <span className='containerLogo'>
-            <img className='logo' id="logo" height={75} src={logo} alt="logo" />
+            <img className='logo' id="logo" height={55} src={logo} alt="logo" />
         </span>
       </NavLink>  
       <ul className='nav-menu'>
         <NavLink to='/home'><p className='nav-item'>Inicio</p></NavLink>
+        <NavLink to='/activities'><p className='nav-item'>Actividades</p></NavLink>
         <NavLink to='/newActivity'><p className='nav-item'>Nueva Actividad</p></NavLink>
-        <NavLink to='/gallery'><p className='nav-item'>Galeria</p></NavLink>
         <NavLink to='/about'><p className='nav-item'>About</p></NavLink>
       </ul>
     </nav>

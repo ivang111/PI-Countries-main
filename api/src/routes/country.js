@@ -20,7 +20,7 @@ router.get('/start', async (req, res, next)=>{
             return {
                 id: d.cca3,
                 name: d.name.common,
-                flag: d.flags[1], 
+                flag: d.flags[0], 
                 continents: d.region,
                 capital: (d.capital) ? d.capital[0] : "Has no capital",
                 subregion: d.subregion,

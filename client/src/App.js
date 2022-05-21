@@ -4,7 +4,7 @@ import Home from './Components/Home/Home.js';
 import newActivity from "./Components/NewActivity/NewActivity.js"
 import CountryDetail from "./Components/CountryDetail/CountryDetail.js"
 import About from './Components/About/About.js';
-import Gallery from './Components/Gallery/Gallery.js';
+import Activities from './Components/Activities/Activities.js';
 
 function App() {
   
@@ -14,9 +14,9 @@ function App() {
       <Route exact path="/" component={Welcome} />
       <Route path="/home" exact component={Home} />
       <Route path="/newActivity" exact component={newActivity} />
-      <Route path="/gallery" exact component={Gallery} />
+      <Route path="/activities" exact component={Activities} />
       <Route path="/about" exact component={About} />
-      <Route path="/coutry/:id" component={CountryDetail} />
+      <Route path="/country/:id" exact component={CountryDetail} />
       
       
      

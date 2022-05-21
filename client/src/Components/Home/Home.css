@@ -1,0 +1,25 @@
+.conteinerTop{
+    background-image: url("../../Img/backgroundHomeTop.png");
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 920px;
+    margin: 0;  
+   
+    
+}
+.conteinerBotton{
+    background-image: url("../../Img/backgroundHomeBotton.png");
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 920px;
+    margin: 0;  
+}
+.containerCardsApp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

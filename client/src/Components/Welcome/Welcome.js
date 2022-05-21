@@ -1,10 +1,18 @@
 import React from 'react'
 import initialImg from "../../Img/initialImg.png"
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
+import { useDispatch,  } from "react-redux";
+import { startCountries } from "../../Redux/Actions/actions.js"
 import "./Welcome.css"
 
 
 function Welcome() {
+    const dispatch = useDispatch();
+    useEffect(() => {
+    dispatch(startCountries());
+  }, [dispatch]);
+//console.log(startCountries)
   return (
     <>
     <div className='conteinerWelcome'>
