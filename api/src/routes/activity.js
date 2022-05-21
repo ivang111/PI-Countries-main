@@ -2,7 +2,7 @@ const { Router } = require('express');
 const { Activities, Countries } = require('../db')
 const router = Router();
 
-router.post("/activity", async (req, res) => {
+router.post("/", async (req, res) => {
    
     try {
       const { name, dificulty, duration, season, selecCountry } = req.body;
@@ -29,6 +29,21 @@ router.post("/activity", async (req, res) => {
     res.send(e);
   }
 });
-  
+
+router.get("/", async  (req, res) => {
+  try {
+    const activities = await Activities.findAll({
+      attributes: [ "id", "name", "dificulty", "duration", "season",  ],
+      include: { model: Countries }
+    })
+    return res.json(activities).status(200)
+
+  }catch (error) {
+    next(error);
+}
+})
+
+ 
+
 
 module.exports = router;
