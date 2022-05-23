@@ -6,5 +6,6 @@ export const SEARCH_BY_NAME = "SEARCH_BY_NAME"//Busca por nombre
 export const ALPHABETICAL_SORT = "ALPHABETICAL_SORT"//Ordena Alfabeticamente
 export const POPULATION_SORT = "POPULATION" //Ordena por poblacion
 export const FILTER_CONTINENT = "FILTER_CONTINENT"//Filtra por continente 
+export const FILTER_ACTIVITY = "FILTER_ACTIVITY"//Filtra por Actividad
 export const GET_ALL_ACTIVITIES = "GET_ALL_ACTIVITIES" //Trae las Actividades
 export const CREATE_ACTIVITY = "CREATE_ACTIVITY" //Crea actividad nuva

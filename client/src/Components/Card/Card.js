@@ -3,7 +3,8 @@ import "./Card.css"
 import imageTop from "../../Img/pngeggcard1.png"
 import { Link } from 'react-router-dom';
 
- const CountryCard = ({id, name, flag, continents }) => {
+ const CountryCard = ({id, name, flag, continents, activities }) => {
+
 
   return (
     <div className='conteinerCard'>
@@ -15,6 +16,7 @@ import { Link } from 'react-router-dom';
           <p className='pText'>{continents}</p>
           <p className='pTitle'>Continente</p>
         </div>
+          <p className='dataActvity'>Actividades: {activities.length}</p>
         <div className='containerButton'>
           <Link to={`/country/${id}`}>
             <button className='buttonCard1'>Mas Info</button>

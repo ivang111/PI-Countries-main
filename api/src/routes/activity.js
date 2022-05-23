@@ -5,7 +5,7 @@ const router = Router();
 router.post("/", async (req, res) => {
    
     try {
-      const { name, dificulty, duration, season, selecCountry } = req.body;
+      const { name, dificulty, duration, season, selecCountry, activitySelect } = req.body;
       const[ newActivity, created] = await Activities.findOrCreate({
         where: { name: name },//verifica que no se repita el valor 
         defaults: {
@@ -16,10 +16,10 @@ router.post("/", async (req, res) => {
         }
       });
       //console.log(newActivity)
-    let countryArr = selecCountry.split(",");
-    for (let i = 0; i<countryArr.length; i++) {
+    //let countryArr = selecCountry.split(", ");
+    for (let i = 0; i<activitySelect.length; i++) {
       let ContriApiBD = await Countries.findAll({
-        where: { name: countryArr[i] },
+        where: { id: activitySelect[i].trim() },
       });
       await newActivity.addCountries(ContriApiBD);
     }

@@ -38,11 +38,7 @@ function Search() {
             value={input}
             onChange={(e) => handleChange(e)}
           />
-          <button
-            className="searchButton"
-            type="submit"
-            onClick={(e) => handleSubmit(e)}
-          >bucar</button>{" "}
+          
         </div>
       </div>
     );

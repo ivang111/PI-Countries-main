@@ -10,6 +10,6 @@ body {
   margin-top: 0;
   background: rgb(25,42,51);
   background: radial-gradient(circle, rgba(25,42,51,1) 0%, rgba(13,19,24,1) 100%);
-  
+  color: white;
 }
  

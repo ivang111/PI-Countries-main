@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { LOCAL_HOST, GET_ALL_COUNTRIES, GET_COUNTRIES_DETAIL,  SEARCH_BY_NAME, ALPHABETICAL_SORT, POPULATION_SORT, FILTER_CONTINENT, GET_ALL_ACTIVITIES, CREATE_ACTIVITY } from "../AtionTypes"
+import { LOCAL_HOST, GET_ALL_COUNTRIES, GET_COUNTRIES_DETAIL,  SEARCH_BY_NAME, ALPHABETICAL_SORT, POPULATION_SORT, FILTER_CONTINENT, FILTER_ACTIVITY, GET_ALL_ACTIVITIES, CREATE_ACTIVITY,  } from "../AtionTypes"
 
 
 //Crea la tabla BD//
@@ -67,13 +67,22 @@ export function populationSort(payload) {
     };
   }
 //Filtrado por continente//  
-export function filterContinent(continente) {
+export function filterContinent(continent) {
     //console.log("ACTIONFILTER:", continente)
     return {
         type: FILTER_CONTINENT,
-        payload: continente, 
+        payload: continent, 
     }
 } 
+//Filtrado por actividad//  
+export function filterActivity(activity) {
+    return {
+        type: FILTER_ACTIVITY,
+        payload: activity, 
+    }
+} 
+
+
 //trae todas las actividades//
 export  function  getActivities() {
     return async function (dispatch){
