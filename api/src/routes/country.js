@@ -61,10 +61,11 @@ router.get("/", async (req, res, next) => {
         try {
             const countries = await Countries.findAll({
                 where:{
-                    name: { [Op.iLike]: `%${name}%` }
+                    name: { [Op.iLike]: `${name}%` }
                 },
-                attributes: { include: ['id', 'name', 'flag', 'continents', 'capital', "subregion", "area", "population" ]
-                },
+                attributes:  ['id', 'name', 'flag', 'continents', 'capital', "subregion", "area", "population" ],
+                include: { model: Activities }
+            
             })
             if(countries.length>0) return res.send(countries)
             else { res.status(404).send('Country not found')}
@@ -74,7 +75,8 @@ router.get("/", async (req, res, next) => {
     }else{    
         try {
             const countries = await Countries.findAll({
-                attributes: ['id', 'name', 'flag', 'continents', 'capital', "subregion", "area", "population" ]
+                attributes: ['id', 'name', 'flag', 'continents', 'capital', "subregion", "area", "population" ],
+                include: { model: Activities }
             })
             return res.send(countries)
         } catch (error) {

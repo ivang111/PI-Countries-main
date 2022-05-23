@@ -1,19 +1,19 @@
 .conteinerCard{
     width: 350px;
     height: 400px;
-    margin-right:5pxrem;
-    margin-left:5pxrem;
-    margin-top: 2rem;
-    background: rgba(251, 251, 251, 0.516);
+    margin-left:2rem;
+    margin-top: 3rem;
+    background: rgba(251, 251, 251, 0.3);
     border-radius: 15%;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.7px);
     -webkit-backdrop-filter: blur(6.7px);
     filter: drop-shadow(8px 7px 4px #000);
+    padding: 0.5rem;
 }
 .recipeImg{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -21,26 +21,30 @@
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.92));
     animation:jello-horizontal .9s both;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: -1rem;
+    left: -1rem;
+    padding: 0.2rem;
 }
 .imageTop{
     position: absolute;
-    width: 350px;
+    width: 330px;
     height: auto;
-    top: 13rem;
-    border-radius: 15%;
-    opacity: 0.3;
+    top: 12.6rem;
+    border-radius: 28%;
+    opacity: 0.4;
 }
 .conteinrData{
-    width: 350px;
-    height: 400px;
-    background: rgb(47,235,226);
-    background: radial-gradient(circle, rgb(48, 88, 86) 0%, rgb(22, 34, 38) 100%);
+    width: 330px;
+    height: 385px;
+    background: radial-gradient(circle, rgb(48, 88, 86, 0.5) 0%, rgb(22, 34, 38, 0.5) 100%);
     border-radius: 85% 15% 15% 15% / 85% 15% 15% 15% ;
     filter: drop-shadow(-1px -1px 3px #000);
     padding-left: 1rem;
 }
+.conteinrData:hover{
+    background: radial-gradient(circle, rgba(60, 196, 158, 0.432) 0%, rgba(57, 90, 101, 0.5) 100%);
+}
+
 .titleCard{
     position: absolute;
     top: 7.5rem;
@@ -73,28 +77,27 @@
 .pText{
     font-size: 40px;
 }
-.containerButton{
+.dataActvity{
     position: absolute;
-    bottom: 1rem;
-    left: 5rem;
+    bottom: 0.7rem;
+    right: 1.5rem;
+    font-size: 23px;
+    font-family: 'Righteous', cursive;
 }
+
 .buttonCard{
+    position: absolute;
+    bottom: -0.5rem;
+    right: -1rem;
     margin: 5px;
-    font-size:12px;
-    font-family:Arial;
+    font-size:18px;
+    padding: 0.3rem;
+    font-family: 'Kodchasan', sans-serif;
     width:auto;
-    height:28px;
-    border-width:1px;
-    color:#ffffff;
-    border-color:#393838;
+    height:auto;
     font-weight:bold;
-    border-top-left-radius:9px;
-    border-top-right-radius:9px;
-    border-bottom-left-radius:9px;
-    border-bottom-right-radius:9px;
-    box-shadow:inset 0px 1px 0px 0px #474646;
-    text-shadow:inset 0px 1px 0px #ffffff;
-    background:linear-gradient(#a5a5a5, #464545);
+    border-radius:10px;
+    background:rgba(255, 255, 255, 0.818);
     margin-top: 10px;
 }
 .buttonCard:hover{
@@ -105,19 +108,21 @@
     background:linear-gradient(#214844, #106a6a);
 }
 .buttonCard1{
+    position: absolute;
+    bottom: -1rem;
+    left: 0rem;
     margin: 5px;
-    font-size:12px;
-    font-family:Arial;
-    width:60px;
-    height:60px;
-    
+    font-size:19px;
+    font-family: 'Kodchasan', sans-serif;
+    width:80px;
+    height:80px;
     color:#ffffff;
     border-color:#393838;
     font-weight:bold;
     border-radius: 50%;
     box-shadow:inset 0px 1px 0px 0px #474646;
     text-shadow:inset 0px 1px 0px #ffffff;
-    background:linear-gradient(#a5a5a5, #464545);
+    background:linear-gradient(hsla(0, 0%, 100%, 0.45), #dcdbdb55);
 
 }
 .buttonCard1:hover{
@@ -125,7 +130,7 @@
     border-color:#5d5b5b;
     box-shadow:inset 0px 1px 0px 0px #474646;
     text-shadow:inset 0px 1px 0px #292929;
-    background:linear-gradient(#214844, #106a6a);
+    background:rgb(228, 195, 10);
 }
 
 

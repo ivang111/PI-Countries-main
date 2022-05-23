@@ -1,4 +1,4 @@
-import { GET_ALL_COUNTRIES, GET_COUNTRIES_DETAIL, SEARCH_BY_NAME, ALPHABETICAL_SORT, POPULATION_SORT, FILTER_CONTINENT, GET_ALL_ACTIVITIES, CREATE_ACTIVITY } from "../AtionTypes";
+import { GET_ALL_COUNTRIES, GET_COUNTRIES_DETAIL, SEARCH_BY_NAME, ALPHABETICAL_SORT, POPULATION_SORT, FILTER_CONTINENT, FILTER_ACTIVITY, GET_ALL_ACTIVITIES, CREATE_ACTIVITY } from "../AtionTypes";
 
 const initialState = {
   countries: [],
@@ -10,23 +10,27 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
+
    case GET_ALL_COUNTRIES:
         return {
             ...state,
             countries: action.payload,
             allCountries: action.payload,
-        }
+        };
+
    case GET_COUNTRIES_DETAIL:
        //console.log(action.payload)
         return{
             ...state,
             countriesDetail: action.payload
-        }
+        };
+
     case SEARCH_BY_NAME:
         return {
             ...state,
             countries: action.payload,
-          };
+        };
+
     case ALPHABETICAL_SORT:
         let sortCountries = [...state.countries];
         sortCountries =  action.payload === "A-Z"
@@ -43,7 +47,8 @@ const rootReducer = (state = initialState, action) => {
         return {
             ...state,
             countries: sortCountries,
-            }; 
+        }; 
+
     case POPULATION_SORT :
         let sortByPopulation = [...state.countries];
         sortByPopulation = 
@@ -54,37 +59,52 @@ const rootReducer = (state = initialState, action) => {
             : state.countries.sort(function (a, b) {
                 return b.population - a.population 
                       });
-            return {
-                ...state,
-                countries: sortByPopulation,
-                };            
-        case FILTER_CONTINENT:
-            const allCountries = state.allCountries;
-            console.log("REDUCER_DATA:", action.payload)
+        return {
+            ...state,
+            countries: sortByPopulation,
+        }; 
+
+    case FILTER_CONTINENT:
+        const allCountries = state.allCountries;
+            //console.log("REDUCER_DATA:", action.payload)
             // const filterByContinete = allCountries.filter((r) =>
             // r.continents?.includes((d) => d.toLowerCase() === action.payload.toLowerCase()
             // ));
-            let filterByContinete =  allCountries.filter((e) =>
-            e.continents.toLowerCase().includes(action.payload.toString().toLowerCase())
-      );
-            
-            return { 
-                ...state,
-                    countries: filterByContinete,
-            }
-        case GET_ALL_ACTIVITIES:
-            return{
-                    ...state,
-                    activities: action.payload 
-            }         
-        case CREATE_ACTIVITY:
-            return{
-                    ...state,
-                    activities: [...state.activities, action.payload]
-            }
-        default:
-            return {
-                    ...state
+        let filterByContinente =  allCountries.filter((e) =>
+        e.continents.toLowerCase().includes(action.payload.toString().toLowerCase())
+        );
+        return { 
+            ...state,
+            countries: filterByContinente,
+        };
+
+    case FILTER_ACTIVITY:
+        const allCountriesActivity = state.allCountries;
+        console.log("REDUCE",allCountriesActivity)
+        let filterByActivity =   allCountriesActivity.filter((e) =>
+        e.activities[0]?.name.toLowerCase()===(action.payload.toString().toLowerCase())
+        );
+        console.log("REDUCE1",filterByActivity)
+        return { 
+            ...state,
+            countries: filterByActivity,
+        };
+
+    case GET_ALL_ACTIVITIES:
+        return{
+            ...state,
+            activities: action.payload 
+        }; 
+
+    case CREATE_ACTIVITY:
+        return{
+            ...state,
+            activities: [...state.activities, action.payload]
+        };
+
+    default:
+        return {
+                ...state
             }
 }};
 
