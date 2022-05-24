@@ -1,0 +1,220 @@
+.conteinerCardId{
+    background-image: url("../../Img/backGround4.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 1281px;
+    margin: 0;  
+}
+.conteinerAllData{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    left: 2rem;
+}
+.cardIdleft{
+    width: 300px;
+    height: 500px;
+    background: rgba(22, 22, 22, 0.65);
+    border-radius: 16px;
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(0, 0, 0, 0.487);
+    margin-left: 300px;
+    margin-top: 0px;
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.526));
+}
+.imgFondo{
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    opacity: 0.2;
+    height: 380px;
+    width: auto;
+    border-radius: 14px;
+}
+.formaOne{
+    position: absolute;
+    left: 4rem;
+    width: 180px;
+    height: 135px;
+    background: #2d2c2c;
+    background: linear-gradient(187deg, rgba(45,44,44,1) 0%, rgb(45, 43, 43) 100%);  
+    filter: drop-shadow(3px 2px 3px #000);
+}
+.formaTwo{
+    position: relative;
+    top: 3rem;
+    left: 4rem;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(59, 58, 58) 50%, rgba(45,44,44,1) 100%);
+    filter: drop-shadow(3px 2px 3px #000);
+}
+.imageCardId{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4.4rem;
+    left: 5.5rem;
+    border: 4px outset #fef60272;
+}
+.conteinerTitle{
+    position: relative;
+    top: 4.5rem;
+    right: -8.5rem;
+    width: 180px;
+    height: 40px;
+    background: #2d2c2c;
+    background: linear-gradient(187deg, rgba(45,44,44,1) 0%, rgb(46, 45, 45) 100%);
+    filter: drop-shadow(3px 2px 3px #000);
+}
+.textsTitle{
+    font-family: 'Righteous', cursive;
+    color: rgb(246, 171, 7);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.containerId{
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgb(96, 95, 95) 0%, rgb(59, 58, 58) 50%, rgba(45,44,44,1) 100%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    filter: drop-shadow(3px 2px 3px #000);
+}
+.idText{
+    color: white;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 8px;
+    font-size: 25px;
+    font-family: 'Didact Gothic', sans-serif;
+    opacity: 0.5;
+}
+.conteinercapital{
+    position: relative;
+    bottom: -10rem;
+}
+.textsCpital{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+}
+.capitaTitle{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    color: rgb(246, 171, 7);
+    text-shadow: 3px 3px 5px #000000ed;
+}
+.cardIdRight{
+    background-color: rgba(25, 26, 26, 0.785);
+    height: 450px;
+    width: 250px;
+    margin-left: -15px;
+    border-radius: 16px;
+    padding-left: 2rem;
+}
+.conteinerDataId{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.titleDataId{
+    color: rgb(246, 171, 7);
+    margin: -6px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+}
+.texts{
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    margin-top: 3px;
+    letter-spacing: 1.5px;
+    margin-left: 2rem;
+}
+.conteinerActivities{
+    position: relative;
+    height: auto;
+    width: 270px;
+    top: 1rem;
+    left: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.533);
+    border-radius: 25px;
+    filter: drop-shadow(6px 6px 2px #000);
+}
+.activityNameId{
+    color: rgb(246, 171, 7);
+    text-shadow: 1px 1px 1px #000000ed;
+    margin: 0;
+    font-size: 25px;
+}
+.textoDetalleAct{
+    color: black;
+    margin: 5px;
+}
+.conteinerImages{
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.43);
+    border-radius: 40px;
+    position: relative;
+    left: 13rem;
+    top: 3rem;
+}
+.logoRigth{
+    width: 500px;
+    height: auto;
+    position: relative;
+    left: -5rem;
+    top: -1.5rem;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.813));
+}
+.logoRigthDos{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: -8rem;
+    top: -7rem;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.813)) 
+}
+.buttonCardid{
+    position: relative;
+    top: 14rem;
+    right: 10rem;
+    margin: 0px;
+    font-size:25px;
+    padding: 0.3rem;
+    font-family: 'Kodchasan', sans-serif;
+    width:auto;
+    height:auto;
+    font-weight:bold;
+    border-radius:10px;
+    background:rgba(255, 255, 255, 0.614);
+    margin-top: 10px;
+}
+.buttonCardid:hover{
+    color:#ffffff;
+    border-color:#5d5b5b;
+    box-shadow:inset 0px 1px 0px 0px #474646;
+    text-shadow:inset 0px 1px 0px #292929;
+    background:linear-gradient(#214844, #106a6a);
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
