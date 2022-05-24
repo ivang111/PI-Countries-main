@@ -1,0 +1,208 @@
+.containerFomrRender{
+    background-image: url("../../Img/backGround5.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 940px;
+    margin: 0;
+}
+.conteinerForm{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.fondoForm{
+    width: 600px;
+    height: 700px;
+    background: rgba(218, 218, 222, 0.71);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.463);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    display: flex;
+}
+.contanerTex{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 390px;
+    height: 630px;
+    
+}
+.cardTextRigth{
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    top: 3rem;
+    right: -14rem;
+    background: #ffb100e3;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.463);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 177, 0, 0.27);
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+    box-sizing: border-box;
+  }
+  .inner-wrap{
+	padding: 10px;
+	background: rgba(221, 221, 221, 0.5);
+	border-radius: 6px;
+	margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.section{
+	font: normal 20px 'Bitter', serif;
+	color: #6b4b01;
+	margin-bottom: 5px;
+}
+.numForm {
+	background: #ffb100e3;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 2px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: rgb(7, 7, 7);
+	margin-top: -3px;
+    font-size: 20px;
+    font-family: 'Odibee Sans', cursive;
+}
+.subTitleInput{
+	margin-right: 15px;
+	font-family: 'Odibee Sans', cursive;
+	color: rgb(1, 1, 1);	
+
+}
+.submitButtonForm{
+    background: #ffb100e3;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: rgb(13, 13, 13);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #d19303e3;
+	font-size: 15px;
+    font-family: 'Odibee Sans', cursive;
+}
+.submitButtonForm:hover{
+    color: white;
+	background: #563d02e3;
+    border: 1px solid #251a01e3;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+/* .divContenedorCountry{
+    background: rgba(255, 255, 255, 0.921);
+    border-radius: 16px;
+    border: 1px solid #ffb100e3;
+    color: black;
+    padding: 10px;
+} */
+.toDivCountry{
+    white-space: nowrap; 
+    width: 200px; 
+    font-family: 'Odibee Sans', cursive;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    color: rgb(29, 5, 5);
+    margin-left: 5px;
+    white-space: initial;
+    
+
+}
+.toDivX{
+    position: relative;
+    top: -3px;
+    right: -3px;
+    height: 22px;
+    background-color: rgb(137, 7, 7);;
+    color: white;
+    border-radius: 50px;
+    
+}
+/* css input range */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    border-radius: 5px;
+    background: #fdfdfd;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e6ba06;
+    cursor: pointer;
+  }
+  .cardTextRigth{
+      text-align: center;
+  }
+  .titleForm{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: #18150e;
+    
+  }
+  .logoForm{
+      width: 200px;
+      height: auto;
+  }
+  .logoFormDos{
+      margin-top: -2rem;
+    width: 200px;
+    height: auto;
+  }
+  .ContainerIcons{
+      display: flex;
+      position: absolute;
+      left: 5rem;
+  }
+  .iconoSocial{
+      width: 50Px;
+      height:auto;
+      margin-right: 20px;
+  }
+
+  
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');

@@ -98,41 +98,45 @@ return (
       <NavBar />
       <div className='banner1'>
         <div className='containerButtons'>
-          <Search />
+          <div className='serchHome'>
+            <Search />
+          </div>
           <div className="orderAlphabeticButton">
-            <button onClick={(e) => orderAZ(e)}>A-Z</button>
-            <button onClick={(e) => orderAZ(e)}>Z-A</button>
+            <button className='buttonHomeSort' onClick={(e) => orderAZ(e)}>A-Z</button>
+            <button className='buttonHomeSort' onClick={(e) => orderAZ(e)}>Z-A</button>
+            <button className='buttonHomeSort' onClick={(e) => orderPopulation(e)}>Min-Max</button>
+            <button className='buttonHomeSort' onClick={(e) => orderPopulation(e)}>Max-Min</button>
           </div>
-          <div className="ordenPopulationButton">
-            <button onClick={(e) => orderPopulation(e)}>Min-Max</button>
-            <button onClick={(e) => orderPopulation(e)}>Max-Min</button>
-          </div>
-          <div className="div1">
-            <label>Filter by Continent: </label>
-              <select name="continents" placeholder='select...' onChange={(e)=> handleContinentChange(e)} >
-                
-                <option value="all">all</option> 
-                <option value="Africa">Africa</option> 
-                <option value="Americas">Americas</option>
-                <option value="Antarctic">Antarctic</option> 
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europe</option> 
-                <option value="Oceania">Oceania</option>    
-            </select> 
-          </div>
-          <div>
-            <label>Filter by Actividad: </label>
-            <select name='actividades' placeholder='Selecciione Actividad' onChange={(e)=> handleActivityChange(e)}>
-              <option value="all">all</option>
-              {activities?.map((e) => { return (
-              <option key={e.id} value={e.name}>{e.name}</option>
-              );})}
-            </select>
-            {/* <div style={{ border: "solid black" }} id="divContenedor" class="divCont"></div>   */}
+          <div className="filterContainer">
+            <div >
+              <select className='selecHome' name="continents" placeholder='select...' onChange={(e)=> handleContinentChange(e)} >
+                  <option value="all">Filtro por Continente</option> 
+                  <option value="Africa">Africa</option> 
+                  <option value="Americas">Americas</option>
+                  <option value="Antarctic">Antarctic</option> 
+                  <option value="Asia">Asia</option>
+                  <option value="Europe">Europe</option> 
+                  <option value="Oceania">Oceania</option>    
+              </select> 
+            </div>
+            <div>
+              <select className='selecHome' name='actividades' placeholder='Selecciione Actividad' onChange={(e)=> handleActivityChange(e)}>
+                <option value="all">Filtro por Actividad</option>
+                {activities?.map((e) => { return (
+                <option key={e.id} value={e.name}>{e.name}</option>
+                );})}
+              </select>
+              {/* <div style={{ border: "solid black" }} id="divContenedor" class="divCont"></div>   */}
+            </div>
           </div>
         </div>
       </div>
       <div >
+      <div className="buttonPage">
+          <button className='buttonpage' onClick={(e) => anterior(e)}>Anterior</button>
+          <button className='buttonpageDos'onClick={(e) => siguiente(e)}>Siguiente</button>
+      </div>
+      
         <div className='containerCardsApp'>
           {countriesByPage.map(d => <Card
             key={d.id}
@@ -143,23 +147,21 @@ return (
             activities={d.activities}
           />)}    
         </div> 
-        <div className="div1">
-          <button onClick={(e) => anterior(e)}>Anterior</button>
-          <button onClick={(e) => siguiente(e)}>Siguiente</button>
+        <div className='bottonPag'>
+          <span id="paginas">Pagina 1</span>  
+          <div className="inputPagbotton">
+            <input
+              id="paginadoNumerico"
+              type="number"
+              min="1"
+              max={maxPages}
+              onChange={handlePageChange}
+            />
+            <span id="unadetantas"> / {page >= 1 ? maxPages : maxPages + 1}</span>
+          </div>
+          
         </div>
-        <div className="div1">
-        <input
-          id="paginadoNumerico"
-          type="number"
-          min="1"
-          max={maxPages}
-          onChange={handlePageChange}
-        />
-
-        <span id="unadetantas"> / {page >= 1 ? maxPages : maxPages + 1}</span>
       </div>
-          <span id="paginas">Página 1</span>
-        </div>
     </div>
     </>
   )

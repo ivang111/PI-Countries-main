@@ -25,7 +25,115 @@
     align-items: center;
     padding: 1.8rem;
     margin-left: 5rem;
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+   
     
 }
+.serchHome{
+    position: relative;
+    left: 15%;
+}
+.orderAlphabeticButton{
+    margin-left: 17rem;
+}
 
+.filterContainer{
+    position: relative;
+    right: -12rem;
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+
+}
+.buttonHomeSort{
+    font-size:15px;
+    font-family:Arial;
+    width:100px;
+    height:30px;
+    border-width:1px;
+    color:rgba(5, 5, 5, 1);
+    border-color:rgba(229, 231, 229, 1);
+    font-weight:bold;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    box-shadow: 0px 10px 14px -7px rgba(103, 104, 103, 1);
+    text-shadow: 0px 1px 0px rgba(199, 195, 195, 1);
+    background:linear-gradient(rgba(221, 221, 221, 1), rgba(255, 255, 249, 1));
+    
+    position: relative;
+    left: 30%;
+    top: 4rem;
+}
+.buttonHomeSort:hover{
+    color:rgb(255, 255, 255);
+    background:linear-gradient(rgb(10, 66, 63), rgb(7, 42, 37));
+    border-color:rgb(28, 28, 28);
+}
+.buttonpage{
+    font-size:15px;
+    font-family:Arial;
+    width:80px;
+    height:30px;
+    border-width:1px;
+    color:rgba(5, 5, 5, 1);
+    border-color:rgba(229, 231, 229, 1);
+    font-weight:bold;
+    border-top-left-radius:15px;
+    border-top-right-radius:4px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    box-shadow: 0px 10px 14px -7px rgba(103, 104, 103, 1);
+    text-shadow: 0px 1px 0px rgba(199, 195, 195, 1);
+    background:linear-gradient(rgba(221, 221, 221, 1), rgba(255, 255, 249, 1));
+    margin-left: 10px;
+    position: relative;
+    left: 10%;
+    top: 1rem;
+}
+.buttonpageDos{
+    font-size:15px;
+    font-family:Arial;
+    width:80px;
+    height:30px;
+    border-width:1px;
+    color:rgba(5, 5, 5, 1);
+    border-color:rgba(229, 231, 229, 1);
+    font-weight:bold;
+    border-top-left-radius:4px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    box-shadow: 0px 10px 14px -7px rgba(103, 104, 103, 1);
+    text-shadow: 0px 1px 0px rgba(199, 195, 195, 1);
+    background:linear-gradient(rgba(221, 221, 221, 1), rgba(255, 255, 249, 1));
+    margin-left: 10px;
+    position: relative;
+    left: 80%;
+    top: 1rem;
+}
+.bottonPag{
+    display: inline-flex;
+    width: 1880px;
+    margin-left: 1rem;
+}
+.inputPagbotton{
+    position: relative;
+    left: 90%;
+}
+/* input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+    box-sizing: border-box;
+} */
 
